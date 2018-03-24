@@ -28,6 +28,12 @@ The model is defined in [mnist.py](https://github.com/nex3z/tfmobile-mnist-andro
 python train.py --model_dir ./saved_model --iterations 10000
 ```
 
+[train.py](https://github.com/nex3z/tfmobile-mnist-android/blob/master/train.py) uses a simple convontional neural network. [train_bn.py](https://github.com/nex3z/tfmobile-mnist-android/blob/master/train_bn.py) provides a bigger network with batch normalization, which hopefully would achieve 99.5% accuracy on validation set within 10000 iterations as shown below.
+
+<div align="center">
+  <img src="image/accuracy.png"/>
+</div>
+
 After training, a collection of checkpoint files and a frozen GraphDef file `mnist.pb` will be generated in `./saved_model`.
 
 You can test the model on test set using the command below.
