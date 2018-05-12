@@ -15,8 +15,7 @@ If you are interested in a [TensorFlow Lite](https://www.tensorflow.org/mobile/t
 
 ### Requirement
 
-- TensorFlow 1.6.0
-- Python 3.6, NumPy 1.14.1
+- Python 3.6, TensorFlow 1.8.0
 - Android Studio 3.0, Gradle 4.1
 
 
@@ -73,7 +72,7 @@ Copy the `mnist_optimized.pb` generated in Step 2 to `/android/app/src/main/asse
 The [Classifer](https://github.com/nex3z/tfmobile-mnist-android/blob/master/android/app/src/main/java/com/nex3z/tfmobilemnist/Classifier.java) creates a [TensorFlowInferenceInterface](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/java/org/tensorflow/contrib/android/TensorFlowInferenceInterface.java) from  `mnist_optimized.pb`. The TensorFlowInferenceInterface provides an interface for inference and performance summarization, which is included in the following library.
 
 ```
-implementation "org.tensorflow:tensorflow-android:1.5.0"
+implementation "org.tensorflow:tensorflow-android:1.8.0"
 ```
 
 
